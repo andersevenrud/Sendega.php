@@ -606,7 +606,7 @@ class Sendega
    *
    * @return  Array           Message data as array
    */
-  protected static function ParseMessage() {
+  public static function ParseMessage() {
     $arguments = self::$ReceiveArguments;
     $params    = SENDEGA_HOST_MODE === 'POST' ? $_POST : $_GET;
     foreach ( $params as $k => $v ) {
