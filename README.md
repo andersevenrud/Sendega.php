@@ -17,7 +17,7 @@ This library expects your encoding to be **UTF-8**
 
 ## Installation
 
-Clone this repository directoy or use *Composer*:
+Clone this repository directly to your project or use *Composer*:
 
 ```
      "require": {
