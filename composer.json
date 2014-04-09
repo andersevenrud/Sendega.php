@@ -4,7 +4,8 @@
     "keywords": ["sendega", "sms", "mms"],
     "homepage": "https://github.com/andersevenrud/Sendega.php",
     "type": "library",
-    "license": "BSD v2",
+    "license": "GPL-2.0+",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Anders Evenrud",
@@ -12,6 +13,12 @@
             "homepage": "http://andersevenrud.github.io/"
         }
     ],
+    "support" : {
+      "email": "andersevenrud@gmail.com",
+      "issues": "https://github.com/andersevenrud/Sendega.php/issues",
+      "source": "https://github.com/andersevenrud/Sendega.php",
+      "wiki": "https://github.com/andersevenrud/Sendega.php/wiki"
+    },
     "repositories" : [
       {
         "type": "git",
