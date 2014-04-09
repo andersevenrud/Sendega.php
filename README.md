@@ -10,7 +10,7 @@ This library uses the API to send and recieve messages (and other extra API meth
 
 ## Requirements
 
-Requires PHP 5.2+ with mbstring, ctype, curl, json and zip (for MMS)
+Requires PHP 5.2+ with mbstring, ctype, curl, xml, json and zip (for MMS)
 
 This library expects your encoding to be **UTF-8**
 

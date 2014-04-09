@@ -12,6 +12,12 @@
             "homepage": "http://andersevenrud.github.io/"
         }
     ],
+    "repositories" : [
+      {
+        "type": "git",
+        "url": "https://github.com/andersevenrud/Sendega.php.git"
+      }
+    ],
     "require": {
         "php": ">=5.2.0"
     },
