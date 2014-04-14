@@ -11,24 +11,24 @@ define("SENDEGA_SENDER",   "your_number");
 
 require realpath(__DIR__ . "/../src/Sendega.php");
 
-$destination = "0012345678"; // Country code + number
+$recipient = "0012345678"; // Country code + number
 
 // Get recipient network information
-var_dump(Sendega::SubscriberEnquiry($destination));
+var_dump(Sendega::SubscriberEnquiry($recipient));
 
 // Get recipient location information
-var_dump(Sendega::HomeLocationEnquiry($destination));
+var_dump(Sendega::HomeLocationEnquiry($recipient));
 
 // Send SMS
-var_dump(Sendega::SendSMS($destination, "This is an SMS message"));
+var_dump(Sendega::SendSMS($recipient, "This is an SMS message"));
 
 // Send MMS (blob/string file attachments)
-var_dump(Sendega::SendMMS($destination, "MMS Message title", Array(
+var_dump(Sendega::SendMMS($recipient, "MMS Message title", Array(
   "test.jpg" => file_get_contents("/tmp/test.jpg")
 )));
 
 // Send MMS (file attachments)
-var_dump(Sendega::SendMMS($destination, "MMS Message title", Array(
+var_dump(Sendega::SendMMS($recipient, "MMS Message title", Array(
   "/tmp/test.jpg"
 )));
 
