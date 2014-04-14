@@ -24,12 +24,12 @@ var_dump(Sendega::SendSMS($destination, "This is an SMS message"));
 
 // Send MMS (blob/string file attachments)
 var_dump(Sendega::SendMMS($destination, "MMS Message title", Array(
-  "test.jpg" => file_get_contents("/Users/test/test.png")
+  "test.jpg" => file_get_contents("/tmp/test.jpg")
 )));
 
 // Send MMS (file attachments)
 var_dump(Sendega::SendMMS($destination, "MMS Message title", Array(
-  "/Users/test/test.png"
+  "/tmp/test.jpg"
 )));
 
 ?>
